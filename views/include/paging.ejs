@@ -1,0 +1,41 @@
+<nav>
+    <ul class="pagination pull-right">
+        <% if (!isFirstPage) { %>
+            <li>
+                <a href="?p=<%= page-1 %>" aria-label="Previous">
+                    <!--<span aria-hidden="true">&laquo;</span>-->
+                    上一页
+                </a>
+            </li>
+        <% }else { %>
+            <li class="disabled">
+                <a href="#" aria-label="Previous">
+                    <!--<span aria-hidden="true">&laquo;</span>-->
+                    上一页
+                </a>
+            </li>
+        <% } %>
+
+        <% if (!isLastPage) { %>
+            <li>
+                <a href="?p=<%= page+1 %>" aria-label="Next">
+                    <!--<span aria-hidden="true">&raquo;</span>-->
+                    下一页
+                </a>
+            </li>
+        <% }else { %>
+            <li class="disabled">
+                <a href="#" aria-label="Previous">
+                    <!--<span aria-hidden="true">&laquo;</span>-->
+                    下一页
+                </a>
+            </li>
+        <% } %>
+        <!--<li class="active"><a href="#">1</a></li>-->
+        <!--<li><a href="#">2</a></li>-->
+        <!--<li><a href="#">3</a></li>-->
+        <!--<li><a href="#">4</a></li>-->
+        <!--<li><a href="#">5</a></li>-->
+
+    </ul>
+</nav>
